@@ -8,6 +8,7 @@ class CounterUsingClassState extends Component {
     };
   }
 
+  //if we use function declaration instead of function expression(with arrow function),we have to do the binding by ourself.but using function expression with arrow handle the binding by itself
   incrementCount = () => {
     this.setState({
       count: this.state.count + 1,
