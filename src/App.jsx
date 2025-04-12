@@ -25,13 +25,13 @@ import Component1 from "./Components/UseContext/Component1";
 // useContext
 import UsingUseContext from "./Components/UseContext/UsingUseContext";
 
-// First creat context
+// First create context(this step is the same for both context API and useContext)
 export const MyContext = React.createContext();
 
 function App() {
   return (
     <div className="App">
-      <h2>React class State</h2>
+      <h2>1.React class State</h2>
 
       <h4>Counter Using Class State</h4>
       <CounterUsingClassState />
@@ -42,7 +42,7 @@ function App() {
       <h4>Counter Using Hooks UseState</h4>
       <CounterUsingHooksUseState />
 
-      <h2>React Hooks</h2>
+      <h2>2.React Hooks</h2>
 
       <h4>Counter IncrementDecrement using Hooks useState</h4>
       <CounterIncrementDecrement />
@@ -52,12 +52,20 @@ function App() {
         useState substitute state and useEffect substitute the life cycle method
       </p>
       <UsingUseEffect />
+
+      <h4>Using context Api and useContext</h4>
+      <div className="App">
+        <MyContext.Provider value={"The data you want to pass"}>
+            <Component1 />
+        </MyContext.Provider>
+      </div>
     </div>
   );
 }
 
 //i.e use effect and life cycle component has counter as a title
 
+//*this step is the same for  context API and useContext
 // function App() {
 //   return (
 //     <div className="App">

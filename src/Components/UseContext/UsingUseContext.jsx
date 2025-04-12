@@ -12,3 +12,4 @@ function UsingUseContext() {
 }
 
 export default UsingUseContext;
+//example context can also be an array as well.so when we need a value we can use index to get the value

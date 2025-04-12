@@ -28,3 +28,4 @@ function Component3() {
 }
 
 export default Component3;
+//e is the value we passed from app.jsx
