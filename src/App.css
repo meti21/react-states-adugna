@@ -7,6 +7,16 @@
   pointer-events: none;
 }
 
+h4{
+  color: rgb(199, 126, 36);
+  text-decoration:underline;
+  
+}
+
+h2{
+  color: #b33b3b;
+  text-decoration: underline;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

@@ -31,10 +31,32 @@ export const MyContext = React.createContext();
 function App() {
   return (
     <div className="App">
+      <h2>React class State</h2>
+
+      <h4>Counter Using Class State</h4>
+      <CounterUsingClassState />
+
+      <h4>Using Class Life Cycle Component</h4>
+      <UsingClassLifeCycleComponent />
+
+      <h4>Counter Using Hooks UseState</h4>
       <CounterUsingHooksUseState />
+
+      <h2>React Hooks</h2>
+
+      <h4>Counter IncrementDecrement using Hooks useState</h4>
+      <CounterIncrementDecrement />
+
+      <h4>Using UseEffect</h4>
+      <p>
+        useState substitute state and useEffect substitute the life cycle method
+      </p>
+      <UsingUseEffect />
     </div>
   );
 }
+
+//i.e use effect and life cycle component has counter as a title
 
 // function App() {
 //   return (
